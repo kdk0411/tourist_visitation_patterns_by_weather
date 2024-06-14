@@ -38,6 +38,8 @@ jobs:
           git reset HEAD -- dbt
           
           # 변경 사항을 스테이징하고 커밋한다.
+          git config --global user.email "wnsldjqja@gmail.com"
+          git config --global user.name "kdk0411"
           git add .
           git commit -m "Pull changes from EC2, excluding specific files and directories"
           
